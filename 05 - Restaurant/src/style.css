@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(226, 231, 185);
+}
+
+nav {
+  background-color: rgb(233, 163, 103, 0.7);
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 10%;
+}
