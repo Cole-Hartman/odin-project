@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#frame {
+  box-shadow: 10px 10px 20px rgba(9, 9, 9, 0.5),
+    -8px -8px 13px rgba(187, 187, 187, 0.4);
+  height: 90%;
+  min-height: 90%;
+  overflow: hidden;
+  width: 28rem;
+}
+
+#number-screen {
+  box-shadow: inset 5px 5px 5px rgba(9, 9, 9, 0.3),
+    inset -5px -5px 3px rgba(131, 131, 131, 0.3);
+}
+
+#top-row > *,
+#other-rows > * {
+  box-shadow: 5px 5px 5px rgba(9, 9, 9, 0.3),
+    -5px -5px 3.5px rgba(131, 131, 131, 0.15);
+  border-radius: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#top-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#top-row > div {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+#clear {
+  flex: 3 !important;
+}
+
+#multiplication {
+  flex: 1 !important;
+}
+
+#other-rows {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+  grid-template-rows: repeat(4, 1fr); /* 4 rows with equal height */
+  gap: 10px; /* Gap between grid items (adjust as needed) */
+}
+
+#other-rows > div {
+  border: 1px solid #ccc;
+  padding: 10px;
+}

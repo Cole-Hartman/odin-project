@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-zinc-800 h-screen flex justify-center items-center">
+    <container
+      id="frame"
+      class="bg-zinc-800 border-2 rounded-3xl border-zinc-800 h-5/6 min-w-96"
+    >
+      <div
+        id="number-screen"
+        class="bg-zinc-800 border-2 border-zinc-800 rounded-3xl my-5 mx-3 h-36 font-light flex flex-col px-10 justify-center items-end drop-shadow-sm"
+      >
+        <div id="top-number" class="text-5xl text-white pb-3"></div>
+        <div id="bottom-number" class="text-gray-500 text-3xl"></div>
+      </div>
+      <container id="button-frame" class="font-light text-3xl text-white">
+        <div id="top-row" class="">
+          <button id="clear" class="">CLEAR</button>
+          <button id="multiplication" class="">*</button>
+        </div>
+        <div id="other-rows" class="">
+          <button id="7" class="">7</button>
+          <button id="8" class="">8</button>
+          <button id="9" class="">9</button>
+          <button id="minus" class="">-</button>
+          <button id="4" class="">4</button>
+          <button id="5" class="">5</button>
+          <button id="6" class="">6</button>
+          <button id="plus" class="">+</button>
+          <button id="1" class="">1</button>
+          <button id="2" class="">2</button>
+          <button id="3" class="">3</button>
+          <button id="division" class="">/</button>
+          <button id="bksp" class="">BKSP</button>
+          <button id="0" class="">0</button>
+          <button id="period" class="">.</button>
+          <button id="equals" class="">=</button>
+        </div>
+      </container>
+    </container>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
