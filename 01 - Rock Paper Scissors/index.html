@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="Rock Paper Scissors"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Play Button Screen -->
+    <div
+      id="screen"
+      class="h-screen w-screen bg-slate-700 flex flex-col justify-center items-center"
+    >
+      <button
+        id="play-button"
+        class="text-3xl font-mono font-bold shadow-lg bg-slate-400 border border-gray-800 rounded-lg h-12 w-1/5 flex justify-center items-center"
+      >
+        PLAY
+      </button>
+      <div id="user-input-div" class="hidden">
+        <button
+          id="rock-button"
+          class="text-3xl font-mono font-bold my-4 py-1 px-10 border-2 rounded-lg border-slate-500 bg-slate-500 shadow-xl"
+        >
+          🪨
+        </button>
+        <button
+          id="paper-button"
+          class="text-3xl font-mono font-bold my-4 py-1 px-10 border-2 rounded-lg border-slate-500 bg-slate-500 shadow-xl"
+        >
+          📄️
+        </button>
+        <button
+          id="scissors-button"
+          class="text-3xl font-mono font-bold my-4 py-1 px-10 border-2 rounded-lg border-slate-500 bg-slate-500 shadow-xl"
+        >
+          ✂️
+        </button>
+      </div>
+      <h3
+        id="output-text"
+        class="text-3xl font-mono font-bold my-4 px-10 py-2 border-2 rounded-lg border-neutral-500 bg-gray-400 hidden"
+      ></h3>
+    </div>
+
+    <script src="rps.js"></script>
+  </body>
+</html>
