@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll("#card");
+  const cards = document.querySelectorAll("a");
 
   cards.forEach((card) => {
     card.className =
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   cards.forEach((card) => {
     card.addEventListener("mouseout", function () {
-      console.log("test");
       card.classList.remove("bg-slate-700", "shadow-xl", "text-2xl");
     });
   });
