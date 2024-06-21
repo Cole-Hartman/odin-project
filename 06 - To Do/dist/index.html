@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+  </head>
+  <body>
+    <!-- Mobile View -->
+    <section id="mobile-view" class="block md:hidden">
+      <div class="block off-screen-menu">
+        <div
+          id="side-projects"
+          class="font-sans text-xl lg:text-3xl text-gray-300 py-5 absolute top-32"
+        >
+          ❏ PROJECTS
+        </div>
+        <div id="side-all-projects" class="flex flex-col items-start">
+          <div id="side-project&trash" class="">
+            <button
+              id="side-project"
+              class="font-sans text-2xl text-gray-400 py-2"
+            >
+              ▪ Project 1
+            </button>
+            <button class="md:w-0 lg:w-20 text-xl">🗑️</button>
+          </div>
+
+          <div
+            id="new-project"
+            class="text-gray-300 text-2xl absolute bottom-8 left-6"
+          >
+            + Project
+          </div>
+        </div>
+      </div>
+
+      <nav id="navbar" class="">
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Desktop View -->
+    <section id="desktop-view" class="">
+      <div id="main-screen" class="flex items-center h-screen">
+        <div
+          id="side-pannel"
+          class="hidden md:block bg-cblack-300 border-r border-cblack-300 w-1/4 h-full"
+        >
+          <div
+            id="side-projects"
+            class="font-sans text-xl lg:text-3xl text-gray-300 py-5 ps-6"
+          >
+            ❏ PROJECTS
+          </div>
+          <div id="side-all-projects" class="flex flex-col items-start">
+            <div id="side-project&trash" class="flex">
+              <button
+                id="side-project"
+                class="font-sans text-xl text-gray-400 py-2 ps-6 pe-0"
+              >
+                ▪ Project 1
+              </button>
+              <button
+                class="md:w-9 lg:w-20 xl:w-20 flex items-center justify-end text-xl"
+              >
+                🗑️
+              </button>
+            </div>
+
+            <div
+              id="new-project"
+              class="text-gray-300 text-2xl absolute bottom-8 left-6"
+            >
+              + Project
+            </div>
+          </div>
+        </div>
+        <div
+          id="main-pannel"
+          class="flex justify-center items-center w-full h-screen"
+        >
+          <h1 class="text-gray-300 text-3xl absolute z-[-1]">No Projects</h1>
+          <div
+            id="main-project"
+            class="h-4/5 w-5/6 bg-cblack-500 border border-cblack-500 rounded-3xl"
+          >
+            <div
+              id="main-project-name"
+              class="text-3xl text-gray-300 pl-8 pt-11"
+            >
+              Project Name
+            </div>
+            <div
+              id="main-project-cell-wrapper"
+              class="ml-8 mr-8 md:mr-20 my-5 h-4/5"
+            >
+              <div
+                id="main-project-cell"
+                class="flex items-center my-2 text-sm sm:text-lg md:text-xl text-gray-300 gap-2 md:gap-8"
+              >
+                <div id="level" class="ml-1">🟢</div>
+                <div id="name" class="w-2/3">Work Out</div>
+                <div id="date">6/20/2024</div>
+                <input
+                  type="checkbox"
+                  class="rounded-checkbox pr-5 mr-2"
+                  id="terms"
+                  name="terms"
+                  value="accepted"
+                />
+              </div>
+              <div
+                id="main-project-cell"
+                class="flex items-center my-2 text-sm sm:text-lg md:text-xl text-gray-300 gap-2 md:gap-8"
+              >
+                <div id="level" class="ml-1">🟢</div>
+                <div id="name" class="w-2/3">Work Out</div>
+                <div id="date">6/20/2024</div>
+                <input
+                  type="checkbox"
+                  class="rounded-checkbox pr-5 mr-2"
+                  id="terms"
+                  name="terms"
+                  value="accepted"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script defer src="bundle.js"></script></body>
+</html>
