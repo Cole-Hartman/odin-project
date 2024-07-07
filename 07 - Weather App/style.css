@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url("./assets/mobileClear.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Medium screens and up */
+@media (min-width: 768px) {
+  body {
+    background: url("./assets/desktopClear.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+/* Forecast */
+.scrolling-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  #card {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    display: inline-block;
+  }
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  #card {
+    margin-right: 3px;
+  }
+}
+
+#card {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid rgba(241, 245, 249, 0.5);
+  border-radius: 1.25rem;
+  width: fit-content;
+  text-align: center;
+  height: 125px;
+  background-color: rgba(241, 245, 249, 0.5);
+}
+
+#card img {
+  margin: auto;
+}
+
+.scrolling-wrapper,
+.scrolling-wrapper-flexbox {
+  height: 120px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
