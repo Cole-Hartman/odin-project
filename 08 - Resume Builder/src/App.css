@@ -1,0 +1,17 @@
+#resume {
+  width: 600px;
+}
+
+@media print {
+  #resume {
+    width: 600px; /* Adjust the width for print, if necessary */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@page {
+  size: auto; /* auto is the initial value */
+  margin: 0mm; /* Adjust the margin as needed */
+  /* This suggests portrait, but it's ultimately up to the browser/printer */
+}
